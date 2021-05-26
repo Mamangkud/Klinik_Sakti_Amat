@@ -4,28 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddActivity"
-    android:padding="30dp">
+    tools:context=".AddActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
 
     <EditText
         android:id="@+id/nama_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:hint="Nama  Pasien"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
     <EditText
         android:id="@+id/gender_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Jenis Kelamin"
         android:inputType="textPersonName"
@@ -35,9 +43,9 @@
 
     <EditText
         android:id="@+id/umur_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Umur"
         android:inputType="textPersonName"
@@ -47,13 +55,15 @@
 
     <Button
         android:id="@+id/add_button"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:text="Tambah"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/umur_input" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
