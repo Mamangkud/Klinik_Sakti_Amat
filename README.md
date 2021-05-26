@@ -1,1 +1,0 @@
-Klinik Sakti Amat
